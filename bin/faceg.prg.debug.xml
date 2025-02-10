@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/jackschneble/Developer/faceg/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="2" lineNum="9" parent="globals/facegView" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="3" lineNum="5" parent="globals/facegApp" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/bin/gen/006-B4257-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="7" lineNum="15" parent="globals/facegView" pc="268435525" symbol="onLayout"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="7" lineNum="16" parent="globals/facegView" pc="268435527" symbol="onLayout"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="9" lineNum="11" parent="globals/facegView" pc="268435561" symbol="initialize"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="9" lineNum="12" parent="globals/facegView" pc="268435563" symbol="initialize"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="22" parent="globals/facegView" pc="268435576" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="24" parent="globals/facegView" pc="268435579" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="25" parent="globals/facegView" pc="268435591" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="28" parent="globals/facegView" pc="268435599" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="31" parent="globals/facegView" pc="268435616" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="32" parent="globals/facegView" pc="268435625" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="35" parent="globals/facegView" pc="268435632" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="36" parent="globals/facegView" pc="268435636" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="37" parent="globals/facegView" pc="268435648" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="38" parent="globals/facegView" pc="268435654" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="39" parent="globals/facegView" pc="268435663" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="40" parent="globals/facegView" pc="268435669" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="41" parent="globals/facegView" pc="268435692" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="54" parent="globals/facegView" pc="268435718" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="56" parent="globals/facegView" pc="268435735" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="57" parent="globals/facegView" pc="268435742" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="58" parent="globals/facegView" pc="268435768" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="63" parent="globals/facegView" pc="268435818" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="71" parent="globals/facegView" pc="268435838" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="73" parent="globals/facegView" pc="268435855" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="74" parent="globals/facegView" pc="268435862" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="75" parent="globals/facegView" pc="268435874" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="80" parent="globals/facegView" pc="268435941" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="89" parent="globals/facegView" pc="268435961" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="92" parent="globals/facegView" pc="268435993" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="93" parent="globals/facegView" pc="268436005" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="94" parent="globals/facegView" pc="268436013" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="95" parent="globals/facegView" pc="268436019" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="99" parent="globals/facegView" pc="268436026" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="100" parent="globals/facegView" pc="268436030" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="101" parent="globals/facegView" pc="268436034" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="102" parent="globals/facegView" pc="268436044" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="105" parent="globals/facegView" pc="268436059" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="106" parent="globals/facegView" pc="268436076" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="108" parent="globals/facegView" pc="268436094" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="109" parent="globals/facegView" pc="268436098" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="110" parent="globals/facegView" pc="268436105" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="113" parent="globals/facegView" pc="268436135" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="116" parent="globals/facegView" pc="268436148" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="117" parent="globals/facegView" pc="268436156" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="118" parent="globals/facegView" pc="268436175" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="119" parent="globals/facegView" pc="268436183" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="121" parent="globals/facegView" pc="268436203" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegView.mc" id="11" lineNum="125" parent="globals/facegView" pc="268436220" symbol="onUpdate"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="12" lineNum="12" parent="globals/facegApp" pc="268436248" symbol="onStart"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="13" lineNum="20" parent="globals/facegApp" pc="268436251" symbol="getInitialView"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="13" lineNum="21" parent="globals/facegApp" pc="268436253" symbol="getInitialView"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="14" lineNum="7" parent="globals/facegApp" pc="268436283" symbol="initialize"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="14" lineNum="8" parent="globals/facegApp" pc="268436285" symbol="initialize"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/source/facegApp.mc" id="15" lineNum="16" parent="globals/facegApp" pc="268436298" symbol="onStop"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/bin/gen/006-B4257-00/source/Rez.mcgen" id="16" lineNum="13" parent="globals/Rez/Layouts" pc="268436301" symbol="WatchFace"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/bin/gen/006-B4257-00/source/Rez.mcgen" id="16" lineNum="14" parent="globals/Rez/Layouts" pc="268436312" symbol="WatchFace"/>
+        <entry filename="/Users/jackschneble/Developer/faceg/bin/gen/006-B4257-00/source/Rez.mcgen" id="16" lineNum="16" parent="globals/Rez/Layouts" pc="268436416" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="7" object="true" symbol="facegView"/>
+        <entry field="true" id="10" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8391489" module="true" symbol="Weather"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="6" object="true" symbol="facegApp"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="9" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="8" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435560" name="dc" stackId="1" startPc="268435525"/>
+        <entry arg="true" endPc="268436247" name="dc" stackId="1" startPc="268435576"/>
+        <entry endPc="268436246" name="screenWidth" stackId="2" startPc="268435579"/>
+        <entry endPc="268436246" name="centerX" stackId="3" startPc="268435579"/>
+        <entry endPc="268436246" name="weatherY" stackId="4" startPc="268435579"/>
+        <entry endPc="268436246" name="weather" stackId="5" startPc="268435579"/>
+        <entry endPc="268435714" name="temp" stackId="6" startPc="268435654"/>
+        <entry endPc="268435711" name="tempString" stackId="7" startPc="268435669"/>
+        <entry endPc="268436246" name="dateY" stackId="8" startPc="268435579"/>
+        <entry endPc="268436246" name="today" stackId="9" startPc="268435579"/>
+        <entry endPc="268436246" name="dateString" stackId="10" startPc="268435579"/>
+        <entry endPc="268436246" name="timeY" stackId="11" startPc="268435579"/>
+        <entry endPc="268436246" name="clockTime" stackId="12" startPc="268435579"/>
+        <entry endPc="268436246" name="timeString" stackId="13" startPc="268435579"/>
+        <entry endPc="268436246" name="stats" stackId="14" startPc="268435579"/>
+        <entry endPc="268436246" name="battery" stackId="15" startPc="268435579"/>
+        <entry endPc="268436246" name="battWidth" stackId="16" startPc="268435579"/>
+        <entry endPc="268436246" name="battHeight" stackId="17" startPc="268435579"/>
+        <entry endPc="268436246" name="battX" stackId="18" startPc="268435579"/>
+        <entry endPc="268436246" name="battY" stackId="19" startPc="268435579"/>
+        <entry endPc="268436246" name="tipWidth" stackId="20" startPc="268435579"/>
+        <entry endPc="268436246" name="tipHeight" stackId="21" startPc="268435579"/>
+        <entry endPc="268436246" name="fillWidth" stackId="22" startPc="268435579"/>
+        <entry arg="true" endPc="268436425" name="dc" stackId="1" startPc="268436301"/>
+        <entry endPc="268436425" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436312"/>
+    </localVars>
+    <deviceInfo deviceVersion="4866e5192c0c99025597cd8e6e841f3d774b64f7" partNumber="006-B4257-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/facegView" offset="125" parentId="globals" symbolId="facegView" type="class"/>
+        <dataEntry label="globals/facegApp" offset="223" parentId="globals" symbolId="facegApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="294" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="347" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="382" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="417" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="facegView" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="facegApp" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="facegView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="facegView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435560" name="onLayout" parent="facegView" startPc="268435525">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="facegView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435575" name="initialize" parent="facegView" startPc="268435561">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="facegView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436247" name="onUpdate" parent="facegView" startPc="268435576">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436250" name="onStart" parent="facegApp" startPc="268436248">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436282" name="getInitialView" parent="facegApp" startPc="268436251">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436297" name="initialize" parent="facegApp" startPc="268436283">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436300" name="onStop" parent="facegApp" startPc="268436298">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436425" name="WatchFace" parent="Layouts" startPc="268436301">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

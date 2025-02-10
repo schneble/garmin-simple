@@ -1,0 +1,471 @@
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 5; ]
+import Toybox.Weather;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 6; ]
+import Toybox.Time;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 7; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 9; ]
+class facegView extends WatchUi.WatchFace{
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 11; ]
+    function initialize() as Void {
+_Users_jackschneble_Developer_faceg_source_facegView_mc_11_26_13_4_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 12 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_jackschneble_Developer_faceg_source_facegView_mc_11_26_13_4_stop:
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 15; ]
+    function onLayout(dc as Dc) as Void {
+_Users_jackschneble_Developer_faceg_source_facegView_mc_15_40_17_4_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 16 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+_Users_jackschneble_Developer_faceg_source_facegView_mc_15_40_17_4_stop:
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 19; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 22; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 24 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 25 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 28 8 ]
+        %tmp.9 = lgetv %dc;
+        %tmp.10 = getv function %tmp.9 :setColor;
+        %tmp.11 = getm $.Toybox.Graphics;
+        %tmp.12 = getv %tmp.11 :COLOR_LT_GRAY;
+        %tmp.13 = getm $.Toybox.Graphics;
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 31 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %screenWidth.1 = local;
+        %tmp.15 = lgetv %dc;
+        %tmp.16 = getv function %tmp.15 :getWidth;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %screenWidth.1 %tmp.17;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 32 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %centerX.2 = local;
+        %tmp.19 = lgetv %screenWidth.1;
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        lputv %centerX.2 %tmp.21;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 35 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %weatherY.3 = local;
+        %tmp.22 = 30;
+        lputv %weatherY.3 %tmp.22;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 36 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %weather.4 = local;
+        %tmp.23 = getm $.Toybox.Weather;
+        %tmp.24 = getv function %tmp.23 :getCurrentConditions;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        lputv %weather.4 %tmp.25;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 37 8 ]
+_Users_jackschneble_Developer_faceg_source_facegView_mc_37_8_49_8_if_stmt:
+        %tmp.27 = lgetv %weather.4;
+        %tmp.28 = null;
+        %tmp.29 = ne %tmp.27 %tmp.28;
+        bf %tmp.29 @_Users_jackschneble_Developer_faceg_source_facegView_mc_37_8_49_8_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_37_8_49_8_if_true:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_37_29_49_8_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 38 12 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_37_29_49_8_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_37_29_49_8_stop" ]
+        %temp.5 = local;
+        %tmp.30 = lgetv %weather.4;
+        %tmp.31 = as %tmp.30 { (!Null) };
+        %tmp.32 = getv %tmp.31 :temperature;
+        lputv %temp.5 %tmp.32;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 39 12 ]
+_Users_jackschneble_Developer_faceg_source_facegView_mc_39_12_48_12_if_stmt:
+        %tmp.34 = lgetv %temp.5;
+        %tmp.35 = null;
+        %tmp.36 = ne %tmp.34 %tmp.35;
+        bf %tmp.36 @_Users_jackschneble_Developer_faceg_source_facegView_mc_39_12_48_12_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_39_12_48_12_if_true:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_39_30_48_12_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 40 16 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_39_30_48_12_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_39_30_48_12_stop" ]
+        %tempString.6 = local;
+        %tmp.37 = lgetv %temp.5;
+        %tmp.38 = as %tmp.37 { (!Null) };
+        %tmp.39 = getv function %tmp.38 :format;
+        %tmp.40 = "%d";
+        %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
+        %tmp.42 = "°";
+        %tmp.43 = add %tmp.41 %tmp.42;
+        lputv %tempString.6 %tmp.43;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 41 16 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :drawText;
+        %tmp.47 = lgetv %centerX.2;
+        %tmp.49 = lgetv %weatherY.3;
+        %tmp.50 = getm $.Toybox.Graphics;
+        %tmp.51 = getv %tmp.50 :FONT_GLANCE;
+        %tmp.53 = lgetv %tempString.6;
+        %tmp.54 = getm $.Toybox.Graphics;
+        %tmp.55 = getv %tmp.54 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.44 %tmp.45(%tmp.47, %tmp.49, %tmp.51, %tmp.53, %tmp.55);
+_Users_jackschneble_Developer_faceg_source_facegView_mc_39_30_48_12_stop:
+        goto @_Users_jackschneble_Developer_faceg_source_facegView_mc_39_12_48_12_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_39_12_48_12_if_end:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_37_29_49_8_stop:
+        goto @_Users_jackschneble_Developer_faceg_source_facegView_mc_37_8_49_8_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_37_8_49_8_if_end:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 54 4 ]
+        %tmp.56 = lgetv %dc;
+        %tmp.57 = getv function %tmp.56 :setColor;
+        %tmp.58 = getm $.Toybox.Graphics;
+        %tmp.59 = getv %tmp.58 :COLOR_LT_GRAY;
+        %tmp.60 = getm $.Toybox.Graphics;
+        %tmp.61 = getv %tmp.60 :COLOR_TRANSPARENT;
+        invoke %tmp.56 %tmp.57(%tmp.59, %tmp.61);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 56 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %dateY.7 = local;
+        %tmp.63 = lgetv %weatherY.3;
+        %tmp.64 = 55;
+        %tmp.65 = add %tmp.63 %tmp.64;
+        lputv %dateY.7 %tmp.65;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 57 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %today.8 = local;
+        %tmp.66 = getm $.Toybox.Time.Gregorian;
+        %tmp.67 = getv function %tmp.66 :info;
+        %tmp.68 = getm $.Toybox.Time;
+        %tmp.69 = getv function %tmp.68 :now;
+        %tmp.70 = invoke %tmp.68 %tmp.69();
+        %tmp.71 = getm $.Toybox.Time;
+        %tmp.72 = getv %tmp.71 :FORMAT_MEDIUM;
+        %tmp.73 = invoke %tmp.66 %tmp.67(%tmp.70, %tmp.72);
+        lputv %today.8 %tmp.73;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 58 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %dateString.9 = local;
+        %tmp.74 = getm $.Toybox.Lang;
+        %tmp.75 = getv function %tmp.74 :format;
+        %tmp.76 = "$1$ $2$ $3$";
+        %tmp.77 = newa 3;
+        %tmp.78 = lgetv %today.8;
+        %tmp.79 = getv %tmp.78 :day_of_week;
+        %tmp.80 = dup %tmp.77;
+        %tmp.81 = aputv %tmp.80 0 %tmp.79;
+        %tmp.82 = lgetv %today.8;
+        %tmp.83 = getv %tmp.82 :day;
+        %tmp.84 = dup %tmp.81;
+        %tmp.85 = aputv %tmp.84 1 %tmp.83;
+        %tmp.86 = lgetv %today.8;
+        %tmp.87 = getv %tmp.86 :month;
+        %tmp.88 = dup %tmp.85;
+        %tmp.89 = aputv %tmp.88 2 %tmp.87;
+        %tmp.90 = invoke %tmp.74 %tmp.75(%tmp.76, %tmp.89);
+        lputv %dateString.9 %tmp.90;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 63 8 ]
+        %tmp.91 = lgetv %dc;
+        %tmp.92 = getv function %tmp.91 :drawText;
+        %tmp.94 = lgetv %centerX.2;
+        %tmp.96 = lgetv %dateY.7;
+        %tmp.97 = getm $.Toybox.Graphics;
+        %tmp.98 = getv %tmp.97 :FONT_SYSTEM_SMALL;
+        %tmp.100 = lgetv %dateString.9;
+        %tmp.101 = getm $.Toybox.Graphics;
+        %tmp.102 = getv %tmp.101 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.91 %tmp.92(%tmp.94, %tmp.96, %tmp.98, %tmp.100, %tmp.102);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 71 2 ]
+        %tmp.103 = lgetv %dc;
+        %tmp.104 = getv function %tmp.103 :setColor;
+        %tmp.105 = getm $.Toybox.Graphics;
+        %tmp.106 = getv %tmp.105 :COLOR_LT_GRAY;
+        %tmp.107 = getm $.Toybox.Graphics;
+        %tmp.108 = getv %tmp.107 :COLOR_TRANSPARENT;
+        invoke %tmp.103 %tmp.104(%tmp.106, %tmp.108);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 73 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %timeY.10 = local;
+        %tmp.110 = lgetv %dateY.7;
+        %tmp.111 = 70;
+        %tmp.112 = add %tmp.110 %tmp.111;
+        lputv %timeY.10 %tmp.112;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 74 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %clockTime.11 = local;
+        %tmp.113 = getm $.Toybox.System;
+        %tmp.114 = getv function %tmp.113 :getClockTime;
+        %tmp.115 = invoke %tmp.113 %tmp.114();
+        lputv %clockTime.11 %tmp.115;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 75 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %timeString.12 = local;
+        %tmp.116 = getm $.Toybox.Lang;
+        %tmp.117 = getv function %tmp.116 :format;
+        %tmp.118 = "$1$:$2$";
+        %tmp.119 = newa 2;
+        %tmp.120 = lgetv %clockTime.11;
+        %tmp.121 = getv %tmp.120 :hour;
+        %tmp.122 = getv function %tmp.121 :format;
+        %tmp.123 = "%02d";
+        %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
+        %tmp.125 = dup %tmp.119;
+        %tmp.126 = aputv %tmp.125 0 %tmp.124;
+        %tmp.127 = lgetv %clockTime.11;
+        %tmp.128 = getv %tmp.127 :min;
+        %tmp.129 = getv function %tmp.128 :format;
+        %tmp.130 = "%02d";
+        %tmp.131 = invoke %tmp.128 %tmp.129(%tmp.130);
+        %tmp.132 = dup %tmp.126;
+        %tmp.133 = aputv %tmp.132 1 %tmp.131;
+        %tmp.134 = invoke %tmp.116 %tmp.117(%tmp.118, %tmp.133);
+        lputv %timeString.12 %tmp.134;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 80 8 ]
+        %tmp.135 = lgetv %dc;
+        %tmp.136 = getv function %tmp.135 :drawText;
+        %tmp.138 = lgetv %centerX.2;
+        %tmp.140 = lgetv %timeY.10;
+        %tmp.141 = getm $.Toybox.Graphics;
+        %tmp.142 = getv %tmp.141 :FONT_SYSTEM_NUMBER_HOT;
+        %tmp.144 = lgetv %timeString.12;
+        %tmp.145 = getm $.Toybox.Graphics;
+        %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.135 %tmp.136(%tmp.138, %tmp.140, %tmp.142, %tmp.144, %tmp.146);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 89 8 ]
+        %tmp.147 = lgetv %dc;
+        %tmp.148 = getv function %tmp.147 :drawLine;
+        %tmp.150 = lgetv %centerX.2;
+        %tmp.151 = 60;
+        %tmp.152 = sub %tmp.150 %tmp.151;
+        %tmp.154 = lgetv %timeY.10;
+        %tmp.155 = 140;
+        %tmp.156 = add %tmp.154 %tmp.155;
+        %tmp.158 = lgetv %centerX.2;
+        %tmp.159 = 60;
+        %tmp.160 = add %tmp.158 %tmp.159;
+        %tmp.162 = lgetv %timeY.10;
+        %tmp.163 = 140;
+        %tmp.164 = add %tmp.162 %tmp.163;
+        invoke %tmp.147 %tmp.148(%tmp.152, %tmp.156, %tmp.160, %tmp.164);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 92 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %stats.13 = local;
+        %tmp.165 = getm $.Toybox.System;
+        %tmp.166 = getv function %tmp.165 :getSystemStats;
+        %tmp.167 = invoke %tmp.165 %tmp.166();
+        lputv %stats.13 %tmp.167;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 93 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %battery.14 = local;
+        %tmp.168 = lgetv %stats.13;
+        %tmp.169 = getv %tmp.168 :battery;
+        lputv %battery.14 %tmp.169;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 94 8 ]
+_Users_jackschneble_Developer_faceg_source_facegView_mc_94_8_96_8_if_stmt:
+        %tmp.171 = lgetv %battery.14;
+        %tmp.172 = null;
+        %tmp.173 = eq %tmp.171 %tmp.172;
+        bf %tmp.173 @_Users_jackschneble_Developer_faceg_source_facegView_mc_94_8_96_8_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_94_8_96_8_if_true:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_94_29_96_8_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 95 12 ]
+        %tmp.174 = 50;
+        lputv %battery.14 %tmp.174;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_94_29_96_8_stop:
+        goto @_Users_jackschneble_Developer_faceg_source_facegView_mc_94_8_96_8_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_94_8_96_8_if_end:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 99 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %battWidth.15 = local;
+        %tmp.175 = 30;
+        lputv %battWidth.15 %tmp.175;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 100 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %battHeight.16 = local;
+        %tmp.176 = 12;
+        lputv %battHeight.16 %tmp.176;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 101 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %battX.17 = local;
+        %tmp.178 = lgetv %centerX.2;
+        %tmp.180 = lgetv %battWidth.15;
+        %tmp.181 = 2;
+        %tmp.182 = div %tmp.180 %tmp.181;
+        %tmp.183 = sub %tmp.178 %tmp.182;
+        lputv %battX.17 %tmp.183;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 102 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %battY.18 = local;
+        %tmp.184 = lgetv %dc;
+        %tmp.185 = getv function %tmp.184 :getHeight;
+        %tmp.186 = invoke %tmp.184 %tmp.185();
+        %tmp.188 = lgetv %battHeight.16;
+        %tmp.189 = sub %tmp.186 %tmp.188;
+        %tmp.190 = 30;
+        %tmp.191 = sub %tmp.189 %tmp.190;
+        lputv %battY.18 %tmp.191;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 105 8 ]
+        %tmp.192 = lgetv %dc;
+        %tmp.193 = getv function %tmp.192 :setColor;
+        %tmp.194 = getm $.Toybox.Graphics;
+        %tmp.195 = getv %tmp.194 :COLOR_WHITE;
+        %tmp.196 = getm $.Toybox.Graphics;
+        %tmp.197 = getv %tmp.196 :COLOR_TRANSPARENT;
+        invoke %tmp.192 %tmp.193(%tmp.195, %tmp.197);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 106 8 ]
+        %tmp.198 = lgetv %dc;
+        %tmp.199 = getv function %tmp.198 :drawRectangle;
+        %tmp.201 = lgetv %battX.17;
+        %tmp.203 = lgetv %battY.18;
+        %tmp.205 = lgetv %battWidth.15;
+        %tmp.207 = lgetv %battHeight.16;
+        invoke %tmp.198 %tmp.199(%tmp.201, %tmp.203, %tmp.205, %tmp.207);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 108 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %tipWidth.19 = local;
+        %tmp.208 = 3;
+        lputv %tipWidth.19 %tmp.208;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 109 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %tipHeight.20 = local;
+        %tmp.210 = lgetv %battHeight.16;
+        %tmp.211 = 2;
+        %tmp.212 = div %tmp.210 %tmp.211;
+        lputv %tipHeight.20 %tmp.212;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 110 8 ]
+        %tmp.213 = lgetv %dc;
+        %tmp.214 = getv function %tmp.213 :fillRectangle;
+        %tmp.216 = lgetv %battX.17;
+        %tmp.218 = lgetv %battWidth.15;
+        %tmp.219 = add %tmp.216 %tmp.218;
+        %tmp.221 = lgetv %battY.18;
+        %tmp.223 = lgetv %battHeight.16;
+        %tmp.225 = lgetv %tipHeight.20;
+        %tmp.226 = sub %tmp.223 %tmp.225;
+        %tmp.227 = 2;
+        %tmp.228 = div %tmp.226 %tmp.227;
+        %tmp.229 = add %tmp.221 %tmp.228;
+        %tmp.231 = lgetv %tipWidth.19;
+        %tmp.233 = lgetv %tipHeight.20;
+        invoke %tmp.213 %tmp.214(%tmp.219, %tmp.229, %tmp.231, %tmp.233);
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 113 8 ]
+        [ "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_start" "_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop" ]
+        %fillWidth.21 = local;
+        %tmp.235 = lgetv %battWidth.15;
+        %tmp.236 = 2;
+        %tmp.237 = sub %tmp.235 %tmp.236;
+        %tmp.239 = lgetv %battery.14;
+        %tmp.240 = mul %tmp.237 %tmp.239;
+        %tmp.241 = 100;
+        %tmp.242 = div %tmp.240 %tmp.241;
+        lputv %fillWidth.21 %tmp.242;
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 116 8 ]
+_Users_jackschneble_Developer_faceg_source_facegView_mc_116_8_122_8_if_stmt:
+        %tmp.244 = lgetv %battery.14;
+        %tmp.245 = 50;
+        %tmp.246 = gt %tmp.244 %tmp.245;
+        bf %tmp.246 @_Users_jackschneble_Developer_faceg_source_facegView_mc_116_8_122_8_if_false;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_116_8_122_8_if_true:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_116_26_118_8_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 117 12 ]
+        %tmp.247 = lgetv %dc;
+        %tmp.248 = getv function %tmp.247 :setColor;
+        %tmp.249 = getm $.Toybox.Graphics;
+        %tmp.250 = getv %tmp.249 :COLOR_GREEN;
+        %tmp.251 = getm $.Toybox.Graphics;
+        %tmp.252 = getv %tmp.251 :COLOR_TRANSPARENT;
+        invoke %tmp.247 %tmp.248(%tmp.250, %tmp.252);
+_Users_jackschneble_Developer_faceg_source_facegView_mc_116_26_118_8_stop:
+        goto @_Users_jackschneble_Developer_faceg_source_facegView_mc_116_8_122_8_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_116_8_122_8_if_false:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 118 15 ]
+_Users_jackschneble_Developer_faceg_source_facegView_mc_118_15_122_8_if_stmt:
+        %tmp.254 = lgetv %battery.14;
+        %tmp.255 = 20;
+        %tmp.256 = gt %tmp.254 %tmp.255;
+        bf %tmp.256 @_Users_jackschneble_Developer_faceg_source_facegView_mc_118_15_122_8_if_false;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_118_15_122_8_if_true:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_118_33_120_8_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 119 12 ]
+        %tmp.257 = lgetv %dc;
+        %tmp.258 = getv function %tmp.257 :setColor;
+        %tmp.259 = getm $.Toybox.Graphics;
+        %tmp.260 = getv %tmp.259 :COLOR_YELLOW;
+        %tmp.261 = getm $.Toybox.Graphics;
+        %tmp.262 = getv %tmp.261 :COLOR_TRANSPARENT;
+        invoke %tmp.257 %tmp.258(%tmp.260, %tmp.262);
+_Users_jackschneble_Developer_faceg_source_facegView_mc_118_33_120_8_stop:
+        goto @_Users_jackschneble_Developer_faceg_source_facegView_mc_118_15_122_8_if_end;
+_Users_jackschneble_Developer_faceg_source_facegView_mc_118_15_122_8_if_false:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_120_15_122_8_start:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 121 12 ]
+        %tmp.263 = lgetv %dc;
+        %tmp.264 = getv function %tmp.263 :setColor;
+        %tmp.265 = getm $.Toybox.Graphics;
+        %tmp.266 = getv %tmp.265 :COLOR_RED;
+        %tmp.267 = getm $.Toybox.Graphics;
+        %tmp.268 = getv %tmp.267 :COLOR_TRANSPARENT;
+        invoke %tmp.263 %tmp.264(%tmp.266, %tmp.268);
+_Users_jackschneble_Developer_faceg_source_facegView_mc_120_15_122_8_stop:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_118_15_122_8_if_end:
+_Users_jackschneble_Developer_faceg_source_facegView_mc_116_8_122_8_if_end:
+[ "/Users/jackschneble/Developer/faceg/source/facegView.mc" 125 8 ]
+        %tmp.269 = lgetv %dc;
+        %tmp.270 = getv function %tmp.269 :fillRectangle;
+        %tmp.272 = lgetv %battX.17;
+        %tmp.273 = 1;
+        %tmp.274 = add %tmp.272 %tmp.273;
+        %tmp.276 = lgetv %battY.18;
+        %tmp.277 = 1;
+        %tmp.278 = add %tmp.276 %tmp.277;
+        %tmp.280 = lgetv %fillWidth.21;
+        %tmp.282 = lgetv %battHeight.16;
+        %tmp.283 = 2;
+        %tmp.284 = sub %tmp.282 %tmp.283;
+        invoke %tmp.269 %tmp.270(%tmp.274, %tmp.278, %tmp.280, %tmp.284);
+_Users_jackschneble_Developer_faceg_source_facegView_mc_22_40_126_4_stop:
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 128; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 131; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 134; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/Users/jackschneble/Developer/faceg/source/facegView.mc"; @line = 1; ]
+<init> {
+}
